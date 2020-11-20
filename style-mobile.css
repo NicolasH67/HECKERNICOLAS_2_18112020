@@ -178,3 +178,15 @@ nav ul li a
     font-family: 'Raleway-Medium';
     font-size: 1.5em;
 }
+
+#section1 input
+{
+    font-size: 1.3em;
+    font-family: 'Raleway-Bold';
+    margin-left: 50px;    
+}
+
+#ville::placeholder
+{
+    color: black;
+}
