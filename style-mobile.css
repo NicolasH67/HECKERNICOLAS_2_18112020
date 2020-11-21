@@ -135,28 +135,36 @@ header a
 {
     text-decoration: none;
 }
-
+nav
+{
+    display: flex;
+}
 nav ul
 {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 100px;
+    height: 50px;
+    width: 100%;
 }
 
 nav ul li a 
 {
+    display: block;
     text-decoration: none;
     font-family: 'Raleway';
     font-size: 2em;
     color: black;
-    
+    align-items: center;
 }
 nav ul li a:hover
 {
     color: #0065FC;
     font-weight: bold;
+}
+nav ul:hover
+{
+    border-bottom: 5px #0065FC solid;
 }
 
 #section1
@@ -217,4 +225,29 @@ form
     color: white; 
     border-radius: 30px;
     padding: 35px 35px 35px 35px;
+}
+
+#allfiltres h1
+{
+    font-family: 'Raleway-ExtraBold';
+    font-size: 2.8em;
+}
+
+.filtres
+{
+    display: flex;
+    border: 2px #AAAAAA solid;
+    border-radius: 150px;
+    width: 350px;
+    height: 70px;
+}
+.filtres .imgfiltres
+{
+    margin: auto 35px auto 35px;
+    font-size: 1.5em;
+    color: #0065FC;
+}
+.filtres .txtfiltres
+{
+    margin-bottom: 45px;
 }
