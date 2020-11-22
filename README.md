@@ -1,11 +1,8 @@
 # HECKERNICOLAS_2_18112020
-Début du projet le 18112020
 
-18/11/2020
-Modification de Fichier README.md
-Ajout des images au dépot distant 
-début du code HTML
+Scénario
+Enfin, vous avez trouvé votre premier stage en tant que développeur web chez Reservia, une petite entreprise proposant un outil de planification de vacances. Leur site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance. Un nouveau design basé sur les principes du Material Design vient d’être proposé par Loïc, designer UI.
 
-19/11/2020
-En-tête et menu navigation 
-et début de la premier section 
+Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche qui vous est attribuée !
+
+Accès au site : 
