@@ -3,96 +3,115 @@
     font-family: 'Raleway';
     src: url(font/Raleway-VariableFont_wght.ttf);
 }
+
 @font-face
 {
     font-family: 'Raleway-italic';
     src: url('font/Raleway-Italic-VariableFont_wght.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-Black';
     src: url('font/static/Raleway-Black.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-BlackItalic';
     src: url('font/static/Raleway-BlackItalic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-Bold';
     src: url('font/static/Raleway-Bold.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-BoldItalic';
     src: url('font/static/Raleway-BoldItalic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-ExtraBold';
     src: url('font/static/Raleway-ExtraBold.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-ExtraBoldItalic';
     src: url('font/static/Raleway-ExtraBoldItalic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-ExtraLight';
     src: url('font/static/Raleway-ExtraLight.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-ExtrLightItalic';
     src: url('font/static/Raleway-ExtraLightItalic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-Italic';
     src: url('font/static/Raleway-Italic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-Light';
     src: url('font/static/Raleway-Light.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-LightItalic';
     src: url('font/static/Raleway-LightItalic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-Medium';
     src: url('font/static/Raleway-Medium.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-MediumItalic';
     src: url('font/static/Raleway-MediumItalic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-Regular';
     src: url('font/static/Raleway-Regular.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-SemiBold';
     src: url('font/static/Raleway-SemiBold.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-SemiBoldItalic';
     src: url('font/static/Raleway-SemiBoldItalic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-Thin';
     src: url('font/static/Raleway-Thin.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-ThinItalic';
@@ -111,20 +130,28 @@ a
 }
 
 /* HEADER */
+
 #header
 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    background-color: white;
 }
-.element:nth-child(1)
+
+#logo:nth-child(1)
 {
     order: 1;
 }
-.element:nth-child(2)
+
+#nav:nth-child(2)
 {
     order: 3;
 }
-.element:nth-child(3)
+
+#inscription:nth-child(3)
 {
     order: 2;
 }
@@ -134,11 +161,81 @@ a
     font-size: 3em;
     font-family: 'Raleway-ExtraBold';
     color: #0065FC;
+    margin: 92px 35px 35px auto;
 }
 
 #header a img
 {
-    margin: 35px 0px 35px 55px;
+    margin: 35px 300px 35px 55px;
     height: 150px;
     width: 285px;
+}
+#nav ul
+{
+    display: flex;
+    padding-bottom: 30px ;
+    width: 100%;
+}
+#nav ul li a 
+{
+    font-family: 'Raleway';
+    font-size: 3em;
+    padding: 25px 100px 25px 75px;
+}
+#navhéb
+{
+    width: 50%;
+}
+
+#navact
+{
+    width: 50%;
+}
+#nav ul li a:hover
+{
+    color: #0065FC;
+    border-bottom: 10px #0065FC solid;
+}
+
+/* Recherche et filtre */
+#recherche 
+{
+    margin: 350px 35px auto 35px;
+}
+/* Recherche */
+
+#recherche h1
+{
+    font-family: 'Raleway-ExtraBold';
+    font-size: 3em;
+}
+
+#recherche h1 + p
+{
+    font-family: 'Raleway';
+    font-size: 1.3em;
+}
+.maps
+{
+    font-size: 3.5em;
+
+}
+#ville
+{
+    border: none;
+    font-size: 3.5em;
+    padding: auto 35px auto 35px;
+}
+#submit
+{
+    display: none;
+
+}
+button
+{
+    font-size: 3.5em;
+    color: white;
+    padding: 40px 50px 40px 50px;
+    background-color: #0065FC;
+    border-radius: 40px;
 }
