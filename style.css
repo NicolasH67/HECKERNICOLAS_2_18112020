@@ -98,31 +98,38 @@
     font-family: 'Raleway-ThinItalic';
     src: url('font/static/Raleway-ThinItalic.ttf');
 }
+ /* Général */
+ body 
+ {
+    margin-left: 0;
+    width: 100%;
+ }
 
-/* Général */
+ ul
+ {
+     list-style: none;
+ }
 
-ul
-{
-    list-style: none;
-}
-a
-{
-    text-decoration: none;
-}
+ a
+ {
+     text-decoration: none;
+ }
+ 
+ /* HEADER */
 
-/* HEADER */
-
-#header
-{
+ header
+ {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: fixed;
     top: 0;
     background-color: white;
+    width: 100%;
+    padding-bottom: 0;
 }
 
-#logo:nth-child(1)
+ #logo:nth-child(1)
 {
     order: 1;
 }
@@ -130,6 +137,7 @@ a
 #nav:nth-child(2)
 {
     order: 3;
+    white-space: pre-wrap;
 }
 
 #inscription:nth-child(3)
@@ -137,11 +145,11 @@ a
     order: 2;
 }
 
-#header a img
+#logo
 {
-    margin: 35px 0px 35px 55px;
     height: 100px;
     width: 225px;
+    margin: 35px auto 0px 35px;
 }
 
 #inscription
@@ -149,46 +157,68 @@ a
     font-size: 2.2em;
     font-family: 'Raleway-ExtraBold';
     color: #0065FC;
-    margin: 70px 100px 35px auto;
+    margin: 70px 35px auto auto;
 }
 
-#nav ul
+nav
 {
+    width: 210%;
+    padding-bottom: 0px;
+    border-bottom: 5px rgba(221, 221, 221, 0.644) solid;
+}
+
+#menu
+{
+    margin-bottom: 0px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30px ;
-    text-align: center;
-}
-
-#nav ul li a 
-{
+    font-size: 2.3em;
     font-family: 'Raleway';
-    font-size: 2.2em;
 }
 
-#nav ul li a:hover
+#menu li 
+{
+    text-align: center;
+    margin: 0;
+    width: 50%;
+}
+
+#menu li:active
 {
     color: #0065FC;
-    border-bottom: 10px #0065FC solid;
+    font-weight: bold;
+    border-bottom: 5px #0065FC solid;
+}
+
+/* Recherche et Filtre*/
+
+#recherche
+{
+    width: 200%;
+    margin: 300px 35px auto 35px;
 }
 
 /* Recherche et filtre */
 #recherche 
 {
-    margin: 350px 35px auto 35px;
+    margin: 300px 35px auto 35px;
 }
 /* Recherche */
-
+#recherche 
+{
+    width: 200%;
+}
 #recherche h1
 {
     font-family: 'Raleway-ExtraBold';
     font-size: 3em;
+    margin: 0;
 }
 
 #recherche h1 + p
 {
     font-family: 'Raleway';
-    font-size: 1.3em;
+    font-size: 2.2em;
 }
 #fctrecherche
 {
@@ -197,14 +227,16 @@ a
 .maps
 {
     font-size: 3.5em;
-
+    padding: 15px 15px 15px 15px;
+    background-color: coral;
+    
 }
 #ville
 {
     border: none;
-    font-size: 3.5em;
-    padding: auto 35px auto 35px;
+    font-size: 2em;
     font-family: 'Raleway';
+    margin: auto auto auto 35px;
 }
 #ville::placeholder
 {
@@ -218,7 +250,7 @@ a
 }
 button
 {
-    font-size: 3.5em;
+    font-size: 2em;
     color: white;
     padding: 40px 50px 40px 50px;
     background-color: #0065FC;
