@@ -303,7 +303,8 @@ button
     margin: auto 0px auto 25px;
 }
 
-#info {
+#info 
+{
     display: flex;
     margin-top: 35px;
     margin-bottom: 35px;
@@ -311,17 +312,19 @@ button
     font-size: 2.4em;
 }
   
-#info i {
+#info i 
+{
     color: #0065fc;
     font-size: 0.7em;
     border: 1px #DEEBFF solid;
     border-radius: 35px;
     padding: 5px 11px;
-    margin-top: 8px;
+    margin-top: 4px;
     margin-bottom: auto;
 }
   
-#info p {
+#info p 
+{
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 25px;
@@ -329,18 +332,160 @@ button
   
 /* Hébergement */
 
-#Hébergements:nth-child(1)
+#Hébergements
 {
-    order: 2;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-#more:nth-child(2)
+#populaire
 {
-    order: 3;
-    white-space: pre-wrap;
+    background-color: #DEEBFF;
+    width: 211%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
 }
 
-#populaire:nth-child(3)
+#title-most
 {
-    order: 1;
+    font-family: 'Raleway-ExtraBold';
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    margin: auto 35px auto 35px;
+}
+
+#title-most h2
+{
+    margin-right: 150px;
+}
+
+#title-most i
+{
+    margin: auto auto;
+    font-size: 1.5em;
+}
+
+.vignette-populaire
+{
+    display: flex;
+    background-color: white;
+    border: 3px white solid;
+    border-radius: 55px;
+    margin: 35px;
+    padding: 10px;
+    
+}
+.img-populaire
+{
+    width: 40%;
+}
+
+.img-populaire img
+{
+    width: 450px;
+    height: 300px;
+    border-radius: 40px 0px 0px 40px;
+    margin-right: 0px;
+    padding-left: 0px;
+}
+.txt-populaire
+{
+    background-color: white;
+    width: 60%;
+    font-size: 2em;
+    padding-left: 35px;
+    border-radius: 0px 35px 35px 0px;
+}
+.txt-populaire h3
+{
+    font-family: 'Raleway-ExtraBold';
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.txt-populaire
+{
+    padding-bottom: 20px;
+}
+.stars i
+{
+    font-size: 0.8em;
+    margin: 0px;
+    padding: 0;
+    color: #0065FC;
+}
+
+/* Hébergements */
+
+#Hébergements
+{
+    background-color: #DEEBFF;
+    width: 211%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+}
+
+#title-héb
+{
+    font-family: 'Raleway-ExtraBold';
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    margin: auto 35px auto 35px;
+}
+
+#title-héb h2
+{
+    margin-right: 150px;
+}
+
+.vignette-hebergemnts
+{
+    display: flex;
+    background-color: white;
+    border: 3px white solid;
+    border-radius: 55px;
+    margin: 35px;
+    padding: 10px;
+    
+}
+.img-populaire
+{
+    width: 40%;
+}
+
+.img-populaire img
+{
+    width: 450px;
+    height: 300px;
+    border-radius: 40px 0px 0px 40px;
+    margin-right: 0px;
+    padding-left: 0px;
+}
+.txt-populaire
+{
+    background-color: white;
+    width: 60%;
+    font-size: 2em;
+    padding-left: 35px;
+    border-radius: 0px 35px 35px 0px;
+}
+.txt-populaire h3
+{
+    font-family: 'Raleway-ExtraBold';
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.txt-populaire
+{
+    padding-bottom: 20px;
+}
+.stars i
+{
+    font-size: 0.8em;
+    margin: 0px;
+    padding: 0;
+    color: #0065FC;
 }
