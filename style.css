@@ -385,7 +385,7 @@ button
 
 #populaire
 {
-    background-color: #DEEBFF;
+    background-color: #f2f2f2;
     width: 211%;
     display: flex;
     flex-direction: column;
@@ -401,10 +401,10 @@ button
     margin: auto 35px auto 35px;
 }
 
-    #title-most h2
-    {
-        margin-right: 150px;
-    }
+#title-most h2
+{
+    margin-right: 150px;
+}
 
 #title-most i
 {
