@@ -162,7 +162,7 @@
 
 nav
 {
-    width: 100%;
+    width: 210%;
     padding-bottom: 0px;
     border-bottom: 5px rgba(221, 221, 221, 0.644) solid;
 }
@@ -329,19 +329,64 @@ button
     margin-bottom: auto;
     margin-left: 25px;
 }
-  
-/* Hébergement */
 
+/* Hébergements */
 #Hébergements
 {
     display: flex;
     flex-direction: column-reverse;
 }
 
+/* Résultat */
+
+#Résultat
+{
+    width: 200%;
+}
+#title-heb h2
+{
+    font-size: 3em;
+    font-family: 'Raleway-ExtraBold';
+    margin: 25px;
+}
+
+.vignette-hebergement
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 3px white solid;
+    border-radius: 55px;
+    margin: 35px;
+    padding: 10px;
+}
+
+.img-heb img
+{
+    width: 98.5%;
+    height: 200px;
+    border-radius: 50px 50px 0 0;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.txt-heb
+{
+    color: black;
+    background-color: white;
+    font-size: 2em;
+    padding-left: 35px;
+    padding-top: 5
+    25px;
+    margin: 0px;
+    border-radius: 0px 0px 35px 35px;
+}  
+/* Populaire */
+
 #populaire
 {
     background-color: #DEEBFF;
-    width: 200%;
+    width: 211%;
     display: flex;
     flex-direction: column;
     padding-left: 0px;
@@ -356,10 +401,10 @@ button
     margin: auto 35px auto 35px;
 }
 
-#title-most h2
-{
-    margin-right: 150px;
-}
+    #title-most h2
+    {
+        margin-right: 150px;
+    }
 
 #title-most i
 {
@@ -416,50 +461,211 @@ button
     color: #0065FC;
 }
 
-/* Marseille */
-
-#Résultat
+#more a
 {
-    width: 211%;
+    font-family: 'Raleway-ExtraBold';
+    font-size: 2em;
+    color: black;
+    margin-left: 35px;
+    margin-bottom: 35px;
+}
+/* Activité */
+
+#Activités
+{
+    width: 200%;
+    margin: 35px 35px auto 35px;
+}
+#title-act
+{
+    font-size: 2em;
+    font-family: 'Raleway-ExtraBold';
+
+}
+
+.grand-activités
+{
     display: flex;
     flex-direction: column;
-    padding-left: 0px;
-}
-
-#title-heb
-{
-    font-family: 'Raleway-ExtraBold';
-    font-size: 2em;
-}
-
-.vignette-hebergement
-{
-    border: 3px red solid;
-    box-shadow: 0px 0px 10px #DEEBFF;
-    border-radius: 55px;
-    margin: 25px;
-}
-.img-heb
-{
-    height: 50%;
-}
-.img-heb img
-{
-    border-radius: 55px 55px 0px 0px;
-    margin: 5px 25px 0px 5px;
-    width: 98.5%;
-    height: 350px;
-}
-.txt-heb
-{
     background-color: white;
-    margin: auto 25px 25px 25px;
-    height: 70%;
-    padding: 0px;
+    border: 3px white solid;
+    border-radius: 55px;
+    margin: 35px;
+    padding: 10px;
+    
 }
 
-.txt-heb h3
+.grand-activités img
 {
+    width: 98.5%;
+    height: 300px;
+    border-radius: 50px 50px 0 0;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.grand-activités h3
+{
+    color: black;
+    background-color: white;
     font-size: 2em;
+    padding-left: 35px;
+    padding-top: 5
+    25px;
+    margin: 0px;
+    border-radius: 0px 0px 35px 35px;
+}  
+
+.activité
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 3px white solid;
+    border-radius: 55px;
+    margin: 35px;
+    padding: 10px;
+}
+
+.activité img
+{
+    width: 98.5%;
+    height: 300px;
+    border-radius: 50px 50px 0 0;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.activité h3
+{
+    color: black;
+    background-color: white;
+    font-size: 2em;
+    padding-left: 35px;
+    padding-top: 5
+    25px;
+    margin: 0px;
+    border-radius: 0px 0px 35px 35px;
+}
+
+footer
+{
+    width: 211%;
+    background-color: #f2f2f2;
+    padding-top: 35px;
+}
+
+.title-footer
+{
     font-family: 'Raleway-ExtraBold';
+    font-size: 2.5em;
+    margin-left: 35px;
+}
+#about ul
+{
+    margin-left: 0px;
+}
+
+.menu-footer
+{
+    font-family: 'Raleway';
+    font-size: 2em;
+}
+
+.menu-footer li a 
+{
+   color: black;
+}
+ 
+@media screen and (min-width: 500px )
+{
+    header
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        position: fixed;
+        top: 0;
+        width: 100%;    
+        padding-bottom: 0;
+    }
+
+    #logo:nth-child(1)
+    {
+        order: 1;
+    }
+
+    #nav:nth-child(2)
+    {
+        order: 2;
+    }
+
+    #inscription:nth-child(3)
+    {  
+        order: 3;
+    }
+    #menu
+    {
+        display: flex;
+        justify-content: space-between;
+        font-size: 2.3em;
+        font-family: 'Raleway';
+    }
+    nav
+    {
+        flex-direction: column;
+    }
+    #menu li 
+    {
+        text-align: center;
+        margin: 0;
+        width: 500px;
+    }
+    #recherche 
+    {
+        width: 200%;
+        display: flex;
+    }
+    #ville
+    {
+        margin: auto 0px auto 0px;
+    }
+    #title-most h2
+    {
+        margin-right: 890px;
+    }
+    #recherche
+    {
+        margin: 200px auto auto auto;
+    }
+    #Résultat
+    {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .vignette-hebergement
+    {
+        width: 50%;
+    }
+
+
+    .img-heb img
+    {
+        width: 80%;
+    }
+    #Activités
+    {
+        display: flex;
+    }
+    .grand-activités
+    {
+        height: 700px;
+    }  
+
+    .activité
+    {  
+    
+    }
+
 }
