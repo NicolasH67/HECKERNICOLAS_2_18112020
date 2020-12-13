@@ -117,100 +117,88 @@ a
 {
     text-decoration: none;
 }
- 
+
  /* HEADER */
 
  header
- {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0;
-    background-color: white;
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
     width: 100%;
-    padding-bottom: 0;
-}
-
-#logo:nth-child(1)
-{
-    order: 1;
-}
-
-#nav:nth-child(2)
-{
-    order: 3;
-    white-space: pre-wrap;
-}
-
-#inscription:nth-child(3)
-{
-    order: 2;
 }
 
 #logo
 {
+    grid-column: 1;
+    grid-row: 1;
+    width: 175px;
     height: 100px;
-    width: 225px;
-    margin: 35px auto 0px 35px;
+    margin: 35px auto auto 35px;
 }
 
 #inscription
 {
+    grid-column: 2;
+    grid-row: 1;
+    font-family: 'Raleway-SemiBold';
     font-size: 2.2em;
-    font-family: 'Raleway-ExtraBold';
     color: #0065FC;
-    margin: 70px 35px auto 150px;
+    margin: 71px auto auto auto;
+    position: relative;
+    right: -50%;
 }
-nav ul 
+
+#menu
 {
-    padding-left: 0;
-    width: 211%;
+    grid-column: 1;
+    grid-row: 1;
     display: flex;
-    justify-content: space-between;
-}
+    flex-direction: row;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
 
-nav ul li 
-{
-    padding-bottom: 10px;
-    border-bottom: 2px #f2f2f2 solid;
-    width: 50%;
 }
-
-nav ul li:hover 
+nav ul li
 {
-    border-bottom: 5px solid;
-    padding-bottom: 10px;
-    color: #0065fc;
+    padding-top: 7%;
 }
 
 nav ul li a 
 {
-    width: 50%;
+    padding-left: 17%;
+    margin: 0px;
+    display: block;
     font-family: 'Raleway';
-    font-size: 2.5em;
-    padding: auto auto auto 35px;
-    text-align: center;
+    font-size: 2.2em;
 }
-  
+
+#navact
+{
+    padding-left: 130%;
+}
+
+nav ul li a:hover 
+{
+    color: #0065fc;
+    border-bottom: 2px solid;
+}
 
 /* Recherche et Filtre*/
 
 #recherche
 {
-    width: 200%;
-    margin: 300px 35px auto 35px;
+    width: 212%;
+    margin: 35px 35px auto 35px;
 }
 
-/* Recherche et filtre */
-#recherche 
-{
-    margin: 300px 0px auto 35px;
-}
 /* Recherche */
+
 #recherche 
 {
-    width: 200%;
+    width: 212%;
 }
 #recherche h1
 {
@@ -228,7 +216,7 @@ nav ul li a
 {
     border: 3px #f2f2f2 solid;
     margin: auto 55px auto auto ;
-    border-radius: 80px;
+    border-radius: 100px;
 }
 .maps
 {
@@ -242,7 +230,7 @@ nav ul li a
     border: none;
     font-size: 2em;
     font-family: 'Raleway';
-    margin: auto 21.5px auto 35px;
+    margin: auto auto auto auto;
     padding-right: 0px;
 }
 #ville::placeholder
@@ -295,6 +283,7 @@ button
 {
     font-family: 'Raleway-ExtraBold';
     margin-right: 25px;
+    margin-left: 20px;
 }
 .filtre:hover
 {
@@ -318,7 +307,7 @@ button
     margin-top: 35px;
     margin-bottom: 35px;
     margin-right: 25px;
-    font-size: 2.4em;
+    font-size: 2.2em;
 }
   
 #info i 
@@ -362,27 +351,49 @@ button
 
 .vignette-hebergement
 {
-    width: 95%;
-    background-color: red;
+    width: 100%;
+    background-color: white;
+    border: 3px white solid;
     border-radius: 55px;
+    box-shadow: 15px 15px 15px #f2f2f2;
     margin: 35px 35px 35px 35px;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 445px;
 }
 
 .img-heb
 {
     margin: 5px 5px 0px 5px;
     overflow: hidden;
+    position: relative;
+    left: 8px;
+    top: 8px;
+    border-radius: 50px 50px 0px 0px;
 }
 
 .img-heb img
 {
-    left: 8px;
-    top: 8px;
-    width: 98%;
-    border-radius: 50px 50px 0px 0px;
+    position: relative;
+    top: -50%;
+    left: -50px;
+    width: 110%;
+}
+
+#amina
+{
+    position: relative;
+    overflow: hidden;
+    top: -510px;
+}
+#mer
+{
+    width: 100%;
+    height: 300%;
+    position: relative;
+    overflow: hidden;
+    top: -100%;
+    left: -7%;
 }
 
 .txt-heb
@@ -409,15 +420,21 @@ button
 
 .stars-heb
 {
+    display: flex;
     font-size: 1,7em;
     color: #0065FC;
+}
+
+.stars-heb .vide
+{
+    color: #f2f2f2;
 }
 /* Populaire */
 
 #populaire
 {
     background-color: #f2f2f2;
-    width: 212%;
+    width: 225%;
     display: flex;
     flex-direction: column;
     padding-left: 0px;
@@ -460,18 +477,19 @@ button
 
 .img-pop img
 {
-    width: 450px;
-    height: 350px;
+    width: 160%;
+    height: 120%;
     position: relative;
-    left: -90px;
+    left: -30%;
+    top: -10%;
 }
 
 #special
 {
-    width: 125%;
-    height: 700px;
-    top: -200px;
-    left: -70px;
+    width: 115%;
+    height: 600px;
+    top: -175px;
+    left: -30px;
 }
 
 .txt-pop
@@ -484,115 +502,168 @@ button
 .txt-pop h3
 {
     margin: 5px 25px 25px 5px;
-    font-size: 2.5em;
+    font-size: 2.3em;
     font-family: 'Raleway-Bold';
 }
+
 .txt-pop p
 {
     margin: 5px;
     font-size: 2em;
 }
-
 .stars
 {
-    margin: 80px auto 5px auto;
-    font-size: 1.7em;
-}
-
-.stars i
-{
+    margin-top: 90px;
+    display: flex;
+    font-size: 1,7em;
     color: #0065FC;
 }
 
+.stars .vide
+{
+    color: #f2f2f2;
+}
 #more a
 {
-    font-family: 'Raleway-ExtraBold';
-    font-size: 2em;
+    font-family: 'Raleway-SemiBold';
+    font-size: 2.4em;
     color: black;
-    margin-left: 35px;
+    margin-left: 55px;
     margin-bottom: 35px;
 }
+
 /* Activité */
 
 #Activités
 {
-    width: 200%;
-    margin: 35px 35px auto 35px;
+    margin-top: 70px;
+    background-color: white;
+    width: 212%;
+    display: flex;
+    flex-direction: column;
 }
+
 #title-act
 {
     font-size: 2em;
-    font-family: 'Raleway-ExtraBold';
-
+    margin-left: 50px;
+    font-family: 'Raleway-SemiBold';
 }
 
 .grand-activités
 {
-    display: flex;
     flex-direction: column;
+    display: flex;
     background-color: white;
-    border: 3px white solid;
     border-radius: 55px;
-    margin: 35px;
-    padding: 10px;
-    
+    margin-bottom: 35px;
+    width: 95%;
+    height: 400px;
 }
-
-.grand-activités img
+.img-gact
 {
-    width: 98.5%;
     height: 300px;
+}
+.img-gact img
+{
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 400px;
     border-radius: 50px 50px 0 0;
-    margin-top: 5px;
-    margin-left: 3px;
 }
 
 .grand-activités h3
 {
     color: black;
     background-color: white;
-    font-size: 2em;
-    padding-left: 35px;
-    padding-top: 5
-    25px;
-    margin: 0px;
+    font-weight: bold;
+    font-size: 2.5em;
     border-radius: 0px 0px 35px 35px;
+    padding-left: 35px;
 }  
 
-.activité
+.petit-activités
 {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border: 3px white solid;
-    border-radius: 55px;
-    margin: 35px;
-    padding: 10px;
+    width: 95%;
 }
 
-.activité img
+.activité
 {
-    width: 98.5%;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    border-radius: 55px;
+    height: 400px;
+    width: 100%;
+}
+
+.img-pact img
+{
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    width: 100%;
     height: 300px;
     border-radius: 50px 50px 0 0;
-    margin-top: 5px;
-    margin-left: 3px;
+}
+#pomegues
+{
+    position: relative;
+    overflow: hidden;
+    border-radius: 55px 55px 0 0;
+}
+#pomegues img
+{
+    height: 1000px;
+    top: -300px;
+}
+
+#frioul
+{
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px 50px 0 0;
+}
+
+#frioul img
+{
+    height: 400px;
+}
+
+#calangues
+{
+    position: relative;
+    overflow: hidden;
+    border-radius: 55px 55px 0 0;
+    height: 400px;
+}
+
+#calangues img
+{
+    height: 900px;
+    width: 1000px;
+    top: -175px;
+    left: -150px;
 }
 
 .activité h3
 {
     color: black;
     background-color: white;
-    font-size: 2em;
-    padding-left: 35px;
-    padding-top: 5
-    25px;
-    margin: 0px;
+    font-weight: bold;
+    font-size: 2.5em;
     border-radius: 0px 0px 35px 35px;
+    padding-left: 35px;
 }
 
 footer
 {
+    display: flex;
+    flex-direction: column;
     width: 211%;
     background-color: #f2f2f2;
     padding-top: 35px;
@@ -600,7 +671,7 @@ footer
 
 .title-footer
 {
-    font-family: 'Raleway-ExtraBold';
+    font-family: 'Raleway-SemiBold';
     font-size: 2.5em;
     margin-left: 35px;
 }
@@ -627,7 +698,6 @@ footer
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
-        position: fixed;
         top: 0;
         width: 100%;    
         padding-bottom: 0;
