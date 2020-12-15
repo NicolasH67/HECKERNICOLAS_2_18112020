@@ -353,7 +353,7 @@ button
 .title-section
 {
     font-size: 1.5em;
-    font-family: 'Raleway-ExtraBold';
+    font-family: 'Raleway-SemiBold';
     margin: 25px;
 }
 
@@ -450,7 +450,7 @@ button
 
 #title-most
 {
-    font-family: 'Raleway-ExtraBold';
+    font-family: 'Raleway-SemiBold';
     display: flex;
     justify-content: space-between;
     font-size: 1.1em;
@@ -540,9 +540,9 @@ button
 #more a
 {
     font-family: 'Raleway-SemiBold';
-    font-size: 2.4em;
+    font-size: 1.4em;
     color: black;
-    margin-left: 55px;
+    margin-left: 25px;
     margin-bottom: 35px;
 }
 
@@ -559,8 +559,8 @@ button
 
 #title-act
 {
-    font-size: 2em;
-    margin-left: 50px;
+    font-size: 1.1em;
+    margin-left: 25px;
     font-family: 'Raleway-SemiBold';
 }
 
@@ -572,12 +572,12 @@ button
     border-radius: 55px;
     margin-bottom: 35px;
     width: 95%;
-    height: 400px;
+    height: 200px;
 }
 
 .img-gact
 {
-    height: 300px;
+    height: 3150px;
 }
 
 .img-gact img
@@ -682,32 +682,29 @@ footer
 {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 111%;
     background-color: #f2f2f2;
     padding-top: 35px;
 }
 
 .title-footer
 {
-    font-family: 'Raleway-SemiBold';
-    font-size: 2.5em;
-    margin-left: 35px;
-}
-
-#about ul
-{
-    margin-left: 0px;
+    font-family: 'Raleway-ExtraBold';
+    font-size: 1.5em;
+    margin-left: 40px;
 }
 
 .menu-footer
 {
     font-family: 'Raleway';
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 .menu-footer li a 
 {
-   color: black;
+    display: block;
+    color: black;
+    margin-bottom: 20px;
 }
  
 @media screen and (min-width: 768px )
