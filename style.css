@@ -132,8 +132,8 @@ a
 {
     grid-column: 1;
     grid-row: 1;
-    width: 175px;
-    height: 100px;
+    width: 125px;
+    height: 62px;
     margin: 35px auto auto 35px;
 }
 
@@ -142,100 +142,101 @@ a
     grid-column: 2;
     grid-row: 1;
     font-family: 'Raleway-SemiBold';
-    font-size: 2.2em;
+    font-size: 1.2em;
     color: #0065FC;
-    margin: 71px auto auto auto;
+    margin: 65% auto auto auto;
     position: relative;
-    right: -50%;
+    right: 0%;
 }
 
 #menu
 {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 2;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
     list-style-type: none;
     display: flex;
-    margin: 0;
+    margin: 0%;
 
 }
 nav ul li
 {
     padding-top: 7%;
+    margin: 0%;
+    width: 100%;
 }
 
 nav ul li a 
 {
-    padding-left: 17%;
-    margin: 0px;
     display: block;
+    width: 100%;
     font-family: 'Raleway';
-    font-size: 2.2em;
-}
-
-#navact
-{
-    padding-left: 130%;
+    font-size: 1.4em;
 }
 
 nav ul li a:hover 
 {
     color: #0065fc;
-    border-bottom: 2px solid;
+    border-bottom: 5px solid;
 }
 
 /* Recherche et Filtre*/
 
 #recherche
 {
-    width: 212%;
-    margin: 35px 35px auto 35px;
+    width: 100%;
+    margin-top: 0px;
 }
 
 /* Recherche */
 
-#recherche 
-{
-    width: 212%;
-}
 #recherche h1
 {
     font-family: 'Raleway-ExtraBold';
-    font-size: 3em;
-    margin: 0;
+    font-size: 1.4em;
+    margin: 0px 35px 5px 35px;
+
 }
 
 #recherche h1 + p
 {
     font-family: 'Raleway';
-    font-size: 2.2em;
+    font-size: 1.05em;
+    margin-bottom: 80px;
+    margin: 0px auto 20px 35px;
+
 }
-#fctrecherche
+
+form
 {
+    display: flex;
+    flex-wrap: nowrap;
     border: 3px #f2f2f2 solid;
-    margin: auto 55px auto auto ;
+    margin: auto auto auto 25px;
     border-radius: 100px;
+    width: 89%;
 }
 .maps
 {
-    padding: 40px 50px 40px 50px;
-    font-size: 2.5em;
+    padding: 20px 25px 20px 25px;
+    font-size: 1.3em;
     background-color: #f2f2f2;
-    border-radius: 40px 0px 0px 40px;
+    border-radius: 20px 0px 0px 20px;
 }
 #ville
 {
     border: none;
-    font-size: 2em;
-    font-family: 'Raleway';
-    margin: auto auto auto auto;
+    font-size: 1.15em;
+    font-family: 'Raleway-ExtraBold';
+    margin: auto 1px auto 7px;
     padding-right: 0px;
 }
 #ville::placeholder
 {
-    font-family: 'Raleway-Extrabold';
+    font-family: 'Raleway-ExtraBold';
     color: black;
 }
 #submit
@@ -244,46 +245,54 @@ nav ul li a:hover
 }
 button
 {
-    font-size: 2.2em;
+    font-size: 1.5em;
     color: white;
-    padding: 40px 50px 40px 50px;
+    padding: 20px 20px 20px 20px;
     background-color: #0065FC;
-    border-radius: 40px;
+    border-radius: 25px;
 }
 
 /* Filtres */
 
 #title-filtres
 {
-    font-family: 'Raleway-ExtraBold';
-    font-size: 3em;
+    font-family: 'Raleway-SemiBold';
+    font-size: 1.5em;
+    margin: 35px auto 20px 35px;
 }
 
 #filtres
 {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 25px;
+    width: 100%;
 }
 .filtre
 {
     display: flex;
-    font-size: 2em;
+    font-size: 1em;
     border: 3px #DEEBFF solid;
     border-radius: 125px;
-    margin: 0px 25px 25px 0px;
+    margin: 0px 5px 15px 0px;
 }
 .filtre i
 {
-    padding: 35px 35px 35px 35px;
+    padding: 15px 15px 15px 15px;
     background-color: #DEEBFF;
     border-radius: 555px;
     color: #0065FC;
 }
+
+.filtre #familial
+{
+    padding: 15px 20px 15px 20px;
+}
 .filtre p
 {
     font-family: 'Raleway-ExtraBold';
-    margin-right: 25px;
-    margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
 }
 .filtre:hover
 {
@@ -307,25 +316,24 @@ button
     margin-top: 35px;
     margin-bottom: 35px;
     margin-right: 25px;
-    font-size: 2.2em;
+    font-size: 0.9em;
 }
   
 #info i 
 {
     color: #0065fc;
-    font-size: 0.7em;
+    font-size: 0.9em;
     border: 1px #DEEBFF solid;
     border-radius: 35px;
     padding: 5px 11px;
-    margin-top: 4px;
-    margin-bottom: auto;
+    margin: 2px 0px auto 35px;
 }
   
 #info p 
 {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 /* Hébergements */
@@ -340,36 +348,33 @@ button
 
 #Résultat
 {
-    width: 200%;
+    width: 100%;
 }
 .title-section
 {
-    font-size: 3em;
+    font-size: 1.5em;
     font-family: 'Raleway-ExtraBold';
     margin: 25px;
 }
 
 .vignette-hebergement
 {
-    width: 100%;
+    width: 98%;
     background-color: white;
-    border: 3px white solid;
-    border-radius: 55px;
+    border-radius: 35px;
     box-shadow: 15px 15px 15px #f2f2f2;
-    margin: 35px 35px 35px 35px;
+    margin: 15px 15px 15px 15px;
     display: flex;
     flex-direction: column;
-    height: 445px;
+    height: 233px;
+    padding: 5px;
 }
 
 .img-heb
 {
-    margin: 5px 5px 0px 5px;
     overflow: hidden;
     position: relative;
-    left: 8px;
-    top: 8px;
-    border-radius: 50px 50px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
 }
 
 .img-heb img
@@ -377,44 +382,45 @@ button
     position: relative;
     top: -50%;
     left: -50px;
-    width: 110%;
+    width: 115%;
+}
+
+#mer
+{
+    width: 100%;
+    height: 280%;
+    position: relative;
+    overflow: hidden;
+    top: -90%;
+    left: -0%;
 }
 
 #amina
 {
     position: relative;
     overflow: hidden;
-    top: -510px;
+    top: -245px;
 }
-#mer
-{
-    width: 100%;
-    height: 300%;
-    position: relative;
-    overflow: hidden;
-    top: -100%;
-    left: -7%;
-}
+
 
 .txt-heb
 {
     color: black;
     background-color: white;
     font-family: 'Raleway-Bold';
-    font-size: 2em;
-    padding-top: 25px;
-    padding-left: 35px;
+    font-size: 1em;
+    padding-left: 15px;
     margin: 0px;
     border-radius: 0px 0px 35px 35px;
 }  
 
 .txt-heb h3
 {
-    margin: 15px 0px 15px 0px;
+    margin: 15px 0px 5px 0px;
 }
 .txt-heb p
 {
-    margin: 0px 0px 15px 0px; 
+    margin: 0px 0px 5px 0px; 
     font-family: 'Raleway';
 }
 
@@ -429,12 +435,13 @@ button
 {
     color: #f2f2f2;
 }
+
 /* Populaire */
 
 #populaire
 {
     background-color: #f2f2f2;
-    width: 225%;
+    width: 108%;
     display: flex;
     flex-direction: column;
     padding-left: 0px;
@@ -446,49 +453,49 @@ button
     font-family: 'Raleway-ExtraBold';
     display: flex;
     justify-content: space-between;
-    font-size: 2em;
-    margin: auto 35px auto 35px;
+    font-size: 1.1em;
+    margin: auto 35px auto 25px;
 }
 
 #title-most i
 {
-    margin: auto auto;
-    margin-right: 25px;
+    margin: auto 1px auto auto;
     font-size: 1.5em;
 }
 
 .vignette-populaire
 {
+    width: 88%;
     background-color: white;
-    border: 3px white solid;
-    border-radius: 55px;
-    margin: 35px 35px 0px 35px;
-    padding: 10px;
+    border-radius: 35px;
+    margin: 25px 0px 0px 20px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
 }
+
 .img-pop
 {
-    width: 50%;
-    height: 300px;
-    border-radius: 45px 0 0 45px;
+    width: 55%;
+    height: 135px;
+    border-radius: 30px 0 0 30px;
     overflow: hidden;
 }
 
 .img-pop img
 {
-    width: 160%;
-    height: 120%;
+    width: 170%;
+    height: 105%;
     position: relative;
-    left: -30%;
-    top: -10%;
+    left: -33%;
+    top: 0%;
 }
 
 #special
 {
-    width: 115%;
-    height: 600px;
-    top: -175px;
+    width: 125%;
+    height: 250px;
+    top: -75px;
     left: -30px;
 }
 
@@ -501,28 +508,35 @@ button
 
 .txt-pop h3
 {
-    margin: 5px 25px 25px 5px;
-    font-size: 2.3em;
+    margin: 5px 25px 5px 5px;
+    font-size: 1.1em;
     font-family: 'Raleway-Bold';
 }
 
 .txt-pop p
 {
     margin: 5px;
-    font-size: 2em;
+    font-size: 1em;
 }
+
 .stars
 {
-    margin-top: 90px;
+    margin-top: 35px;
     display: flex;
     font-size: 1,7em;
     color: #0065FC;
+    width: 10%;
 }
 
 .stars .vide
 {
     color: #f2f2f2;
 }
+.stars p
+{
+    margin: 0;
+}
+
 #more a
 {
     font-family: 'Raleway-SemiBold';
@@ -538,7 +552,7 @@ button
 {
     margin-top: 70px;
     background-color: white;
-    width: 212%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -560,10 +574,12 @@ button
     width: 95%;
     height: 400px;
 }
+
 .img-gact
 {
     height: 300px;
 }
+
 .img-gact img
 {
     overflow: hidden;
@@ -610,12 +626,14 @@ button
     height: 300px;
     border-radius: 50px 50px 0 0;
 }
+
 #pomegues
 {
     position: relative;
     overflow: hidden;
     border-radius: 55px 55px 0 0;
 }
+
 #pomegues img
 {
     height: 1000px;
@@ -664,7 +682,7 @@ footer
 {
     display: flex;
     flex-direction: column;
-    width: 211%;
+    width: 100%;
     background-color: #f2f2f2;
     padding-top: 35px;
 }
@@ -675,6 +693,7 @@ footer
     font-size: 2.5em;
     margin-left: 35px;
 }
+
 #about ul
 {
     margin-left: 0px;
