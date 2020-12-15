@@ -156,34 +156,33 @@ a
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 111%;
     list-style-type: none;
     display: flex;
-    margin: 0%;
+    margin: 0px;
 
 }
-nav ul li
+
+#menu li
 {
     padding-top: 7%;
-    margin: 0%;
-    width: 100%;
+    width: 50%;
 }
 
-nav ul li a 
+#menu li a 
 {
     display: block;
-    width: 100%;
     font-family: 'Raleway';
     font-size: 1.4em;
 }
 
-nav ul li a:hover 
+#menu li a:hover 
 {
     color: #0065fc;
     border-bottom: 5px solid;
 }
 
-/* Recherche et Filtre*/
+/* Recherche et Filtre */
 
 #recherche
 {
@@ -359,7 +358,7 @@ button
 
 .vignette-hebergement
 {
-    width: 98%;
+    width: 108%;
     background-color: white;
     border-radius: 35px;
     box-shadow: 15px 15px 15px #f2f2f2;
@@ -418,6 +417,7 @@ button
 {
     margin: 15px 0px 5px 0px;
 }
+
 .txt-heb p
 {
     margin: 0px 0px 5px 0px; 
@@ -441,7 +441,7 @@ button
 #populaire
 {
     background-color: #f2f2f2;
-    width: 108%;
+    width: 118%;
     display: flex;
     flex-direction: column;
     padding-left: 0px;
@@ -548,141 +548,96 @@ button
 
 /* Activité */
 
+
 #Activités
 {
-    margin-top: 70px;
-    background-color: white;
     width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
-#title-act
+.title-activités
 {
     font-size: 1.1em;
-    margin-left: 25px;
     font-family: 'Raleway-SemiBold';
+    margin: 25px;
 }
 
-.grand-activités
+.gact
 {
-    flex-direction: column;
-    display: flex;
+    width: 98%;
     background-color: white;
-    border-radius: 55px;
-    margin-bottom: 35px;
-    width: 95%;
-    height: 200px;
+    border-radius: 35px;
+    box-shadow: 15px 15px 15px #f2f2f2;
+    margin: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    height: 233px;
 }
 
 .img-gact
 {
-    height: 3150px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px 30px 0px 0px;
 }
 
 .img-gact img
 {
+    position: relative;
+    top: -50%;
+    left: -50px;
+    width: 115%;
+}
+
+.pact
+{
+    width: 98%;
+    background-color: white;
+    border-radius: 35px;
+    box-shadow: 15px 15px 15px #f2f2f2;
+    margin: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    height: 233px;
+}
+
+.img-pact
+{
     overflow: hidden;
     position: relative;
-    top: 0px;
-    width: 100%;
-    height: 400px;
-    border-radius: 50px 50px 0 0;
-}
-
-.grand-activités h3
-{
-    color: black;
-    background-color: white;
-    font-weight: bold;
-    font-size: 2.5em;
-    border-radius: 0px 0px 35px 35px;
-    padding-left: 35px;
-}  
-
-.petit-activités
-{
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-}
-
-.activité
-{
-    flex-direction: column;
-    display: flex;
-    background-color: white;
-    border-radius: 55px;
-    height: 400px;
-    width: 100%;
+    border-radius: 30px 30px 0px 0px;
 }
 
 .img-pact img
 {
-    overflow: hidden;
     position: relative;
-    top: 0px;
-    width: 100%;
-    height: 300px;
-    border-radius: 50px 50px 0 0;
+    top: -50%;
+    left: -50px;
+    width: 115%;
 }
 
-#pomegues
-{
-    position: relative;
-    overflow: hidden;
-    border-radius: 55px 55px 0 0;
-}
-
-#pomegues img
-{
-    height: 1000px;
-    top: -300px;
-}
-
-#frioul
-{
-    position: relative;
-    overflow: hidden;
-    border-radius: 50px 50px 0 0;
-}
-
-#frioul img
-{
-    height: 400px;
-}
-
-#calangues
-{
-    position: relative;
-    overflow: hidden;
-    border-radius: 55px 55px 0 0;
-    height: 400px;
-}
-
-#calangues img
-{
-    height: 900px;
-    width: 1000px;
-    top: -175px;
-    left: -150px;
-}
-
-.activité h3
+.nom-act
 {
     color: black;
     background-color: white;
-    font-weight: bold;
-    font-size: 2.5em;
+    font-family: 'Raleway-Bold';
+    font-size: 1em;
+    padding-left: 15px;
+    margin: 0px;
     border-radius: 0px 0px 35px 35px;
-    padding-left: 35px;
+}  
+
+.nom-act h3
+{
+    margin: 15px 0px 5px 0px;
 }
+
+/* FOOTER */
 
 footer
 {
     display: flex;
     flex-direction: column;
-    width: 111%;
+    width: 118%;
     background-color: #f2f2f2;
     padding-top: 35px;
 }
@@ -709,87 +664,5 @@ footer
  
 @media screen and (min-width: 768px )
 {
-    header
-    {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        top: 0;
-        width: 100%;    
-        padding-bottom: 0;
-    }
-
-    #logo:nth-child(1)
-    {
-        order: 1;
-    }
-
-    #nav:nth-child(2)
-    {
-        order: 2;
-    }
-
-    #inscription:nth-child(3)
-    {  
-        order: 3;
-    }
-    #menu
-    {
-        display: flex;
-        justify-content: space-between;
-        font-size: 2.3em;
-        font-family: 'Raleway';
-    }
-    nav
-    {
-        flex-direction: column;
-    }
-    #menu li 
-    {
-        text-align: center;
-        margin: 0;
-        width: 500px;
-    }
-    #recherche 
-    {
-        width: 200%;
-        display: flex;
-    }
-    #ville
-    {
-        margin: auto 0px auto 0px;
-    }
-    #title-most h2
-    {
-        margin-right: 890px;
-    }
-    #recherche
-    {
-        margin: 200px auto auto auto;
-    }
-    #Résultat
-    {
-        display: flex;
-        flex-direction: column;
-    } 
-
-    .vignette-hebergement
-    {
-        width: 50%;
-    }
-
-    .img-heb img
-    {
-        width: 80%;
-    }
-    #Activités
-    {
-        display: flex;
-    }
-    .grand-activités
-    {
-        height: 700px;
-    }  
-
 
 }
