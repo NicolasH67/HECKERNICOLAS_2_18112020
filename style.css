@@ -145,8 +145,6 @@ a
     font-size: 1.2em;
     color: #0065FC;
     margin: 65% auto auto auto;
-    position: relative;
-    right: 0%;
 }
 
 #menu
@@ -660,9 +658,4 @@ footer
     display: block;
     color: black;
     margin-bottom: 20px;
-}
- 
-@media screen and (min-width: 768px )
-{
-
 }
