@@ -742,7 +742,7 @@ footer
 
     #ville
     {
-        margin: auto 0px auto 7px;
+        margin: auto -12px auto 7px;
     }
     
     #info
@@ -913,6 +913,7 @@ footer
     {
         margin: 35px auto auto 35px;
     }
+
     #inscription
     {
         grid-column: 3;
@@ -950,6 +951,7 @@ footer
     {
         font-size: 1.7em;
     }
+    
     #fctrecherche
     {
         margin-bottom: 35px;
@@ -1148,5 +1150,244 @@ footer
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1023px)
+{
+    /* HEADER */
+
+    header
+    {
+        margin-bottom: -1%;
+    }
+
+    #menu
+    {
+        right: -163%;
+        top: -48%;
+    }
+
+    #menu li a
+    {
+        padding-top: 28%;
+    }
+
+    #menu li a:hover 
+    {
+        border-top: 5px #0065FC solid;
+        border-bottom: none;
+    }
+
+    #inscription
+    {
+        top: 32%;
+    }
+
+    /* Hébergements */
+
+    #Hébergements
+    {
+        flex-direction: row;
+        width: 157%;
+    }
+
+    #Résultat
+    {
+        background-color: #f2f2f2;
+        border-radius: 35px;
+        margin: auto 25px auto 25px;
+    }
+
+    #Résultat-2
+    {
+        width: 100%;
+    }
+
+    .vignette-hebergement
+    {
+        width: 100%;
+        height: 232px;
+    }
+
+    .lien-heb
+    {
+        width: 28%;
+    }
+    #amina
+    {
+        top: -150%;
+    }
+
+    #more
+    {
+        margin-bottom: 25px;
+    }
+    /* Populaire */
+
+    aside
+    {
+        width: 40%;
+        border-radius: 35px;
+        margin-right: 25px;
+    }
+    
+    #populaire
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vignette-populaire
+    {
+        width: 90%;
+        height: 157px;
+    }
+
+    .img-pop
+    {
+        height: 156px;
+    }
+
+    /* Activités */
+
+    #Activités
+    {
+        width: 150%;
+    }
+
+    #Activités-all
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .activités-3
+    {
+        width: 50%;
+        margin-right: 15px;
+    }
+
+    .vignette-gactivité
+    {
+        width: 50%;
+        margin-right: 30px;
+        height: 520px;
+    }
+
+    .img-gact img
+    {
+        width: 250%;
+        height: 125%;
+        left: -294px;
+    }
+
+    .vignette-pactivité
+    {
+        height: 240px;
+    }
+
+    .pact
+    {
+        width: 50%;
+    }
+
+    #vignette-calanques
+    {
+        width: 50%;
+        margin-left: 40px;
+    }
+
+    #calanques
+    {
+        top: -50%;
+        left: -145%;
+        height: 200%;
+        width: 400%;
+
+    }
+
+    #pomegues
+    {
+        top: -135%;
+    }
+
+    /* FOOTER */
+    
+    footer
+    {
+        margin-left: -110px;
+        width: 168%;
+    }
+}
+
+@media screen and (min-width: 1439px)
+{
+    #inscription
+    {
+        top: 36%;
+    }
+    .lien-heb
+    {
+        width: 29%;
+    }
+
+    .vignette-hebergement
+    {
+        height: 295px;
+    }
+
+    .vignette-populaire
+    {
+        height: 200px;
+    }
+
+    .img-pop
+    {
+        height: 196px;
+    }
+
+    #special
+    {
+        height: 270px;
+    }
+
+    .txt-pop
+    {
+        font-size: 1.5em;
+    }
+
+    /* Activité */
+
+    .vignette-gactivité
+    {
+        height: 625px;
+    }
+    
+    .vignette-pactivité
+    {
+        height: 295px;
+    }
+
+    #pomegues
+    {
+        top: -158%;
+    }
+
+    #calanques
+    {
+        left: -134%;
+        height: 195%;
+        width: 375%;
+    }
+
+    .img-pact img
+    {
+        top: -27%;
+    }
+
+    footer
+    {
+        margin-left: -222px;
     }
 }
