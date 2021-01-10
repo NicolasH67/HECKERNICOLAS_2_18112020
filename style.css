@@ -3,103 +3,122 @@
     font-family: 'Raleway';
     src: url(font/Raleway-VariableFont_wght.ttf);
 }
+
 @font-face
 {
     font-family: 'Raleway-italic';
     src: url('font/Raleway-Italic-VariableFont_wght.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-Black';
     src: url('font/static/Raleway-Black.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-BlackItalic';
     src: url('font/static/Raleway-BlackItalic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-Bold';
     src: url('font/static/Raleway-Bold.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-BoldItalic';
     src: url('font/static/Raleway-BoldItalic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-ExtraBold';
     src: url('font/static/Raleway-ExtraBold.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-ExtraBoldItalic';
     src: url('font/static/Raleway-ExtraBoldItalic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-ExtraLight';
     src: url('font/static/Raleway-ExtraLight.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-ExtrLightItalic';
     src: url('font/static/Raleway-ExtraLightItalic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-Italic';
     src: url('font/static/Raleway-Italic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-Light';
     src: url('font/static/Raleway-Light.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-LightItalic';
     src: url('font/static/Raleway-LightItalic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-Medium';
     src: url('font/static/Raleway-Medium.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-MediumItalic';
     src: url('font/static/Raleway-MediumItalic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-Regular';
     src: url('font/static/Raleway-Regular.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-SemiBold';
     src: url('font/static/Raleway-SemiBold.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-SemiBoldItalic';
     src: url('font/static/Raleway-SemiBoldItalic.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-Thin';
     src: url('font/static/Raleway-Thin.ttf');
 }
+
 @font-face
 {
     font-family: 'Raleway-ThinItalic';
     src: url('font/static/Raleway-ThinItalic.ttf');
 }
 
- /* Général */
+    /* Général */
 
 body 
 {
@@ -118,7 +137,7 @@ a
     text-decoration: none;
 }
 
- /* HEADER */
+    /* HEADER */
 
 header
 {
@@ -150,6 +169,7 @@ header
     width: 100px;
     height: 40px;
 }
+
 nav
 {
     width: 121%;
@@ -167,7 +187,6 @@ nav
     display: flex;
     margin: 0px;
     padding-inline-start: 0px;
-
 }
 
 #menu li
@@ -194,7 +213,7 @@ nav
     width: 100%;
 }
 
-/* Recherche et Filtre */
+    /* Recherche et Filtre */
 
 #recherche
 {
@@ -202,14 +221,13 @@ nav
     margin-top: 0px;
 }
 
-/* Recherche */
+    /* Recherche */
 
 #recherche h1
 {
     font-family: 'Raleway-ExtraBold';
     font-size: 1.5em;
     margin: 0px 35px 5px 35px;
-
 }
 
 #recherche h1 + p
@@ -230,6 +248,7 @@ form
     border-radius: 100px;
     width: 88%;
 }
+
 .maps
 {
     padding: 20px 25px 20px 25px;
@@ -237,6 +256,7 @@ form
     background-color: #f2f2f2;
     border-radius: 20px 0px 0px 20px;
 }
+
 #ville
 {
     border: none;
@@ -245,15 +265,18 @@ form
     margin: auto 30px auto 7px;
     padding-right: 0px;
 }
+
 #ville::placeholder
 {
     font-family: 'Raleway-ExtraBold';
     color: black;
 }
+
 #submit
 {
     display: none;
 }
+
 button
 {
     border: none;
@@ -264,7 +287,7 @@ button
     border-radius: 25px;
 }
 
-/* Filtres */
+    /* Filtres */
 
 #title-filtres
 {
@@ -280,6 +303,7 @@ button
     margin-left: 25px;
     width: 100%;
 }
+
 .filtre
 {
     display: flex;
@@ -288,6 +312,7 @@ button
     border-radius: 125px;
     margin: 0px 5px 15px 0px;
 }
+
 .filtre i
 {
     padding: 15px 15px 15px 15px;
@@ -300,12 +325,14 @@ button
 {
     padding: 15px 20px 15px 20px;
 }
+
 .filtre p
 {
     font-family: 'Raleway-ExtraBold';
     margin-right: 20px;
     margin-left: 10px;
 }
+
 .filtre:hover
 {
     background-color: #DEEBFF;
@@ -349,7 +376,7 @@ button
     margin-left: 15px;
 }
 
-/* Hébergements */
+    /* Hébergements */
 
 #Hébergements
 {
@@ -357,12 +384,13 @@ button
     flex-direction: column-reverse;
 }
 
-/* Résultat */
+    /* Résultat */
 
 #Résultat
 {
     width: 106%;
 }
+
 .title-section
 {
     font-size: 1.5em;
@@ -412,9 +440,8 @@ button
 {
     position: relative;
     overflow: hidden;
-    top: -180%;
+    top: -176%;
 }
-
 
 .txt-heb
 {
@@ -450,7 +477,7 @@ button
     color: #f2f2f2;
 }
 
-/* Populaire */
+    /* Populaire */
 
 aside
 {
@@ -550,6 +577,7 @@ aside
 {
     color: #f2f2f2;
 }
+
 .stars p
 {
     margin: 0;
@@ -564,13 +592,14 @@ aside
     margin-bottom: 35px;
 }
 
-/* Activité */
+    /* Activité */
 
 #Activités
 {
     width: 100%;
     margin-top: 65px;
 }
+
 .title-activités
 {
     font-size: 1.3em;
@@ -613,7 +642,7 @@ aside
 #calanques
 {
     position: relative;
-    top: -5%;
+    top: -15%;
 }
 
 .pact
@@ -671,7 +700,7 @@ aside
     margin: 15px 0px 5px 0px;
 }
 
-/* FOOTER */
+    /* FOOTER */
 
 footer
 {
@@ -704,9 +733,11 @@ footer
     justify-content: space-around;
 }
 
+    /* Media Queries */
+
 @media screen and (max-width: 370px)
 {
-    /* header */
+        /* header */
     
     #inscription
     {
@@ -723,7 +754,7 @@ footer
         font-size: 1.2em;
     }
 
-    /* Recherche */
+        /* Recherche */
 
     #recherche h1
     {
@@ -750,7 +781,7 @@ footer
         font-size: 0.8em;
     }
 
-    /* Hébergement */
+        /* Hébergement */
 
     .vignette-hebergement
     {
@@ -759,7 +790,7 @@ footer
 
     .img-heb img
     {
-        top: -33%;
+        top: -41%;
         left: -75px;
         width: 122%;
     }
@@ -769,7 +800,7 @@ footer
         top: -145%;
     }
     
-    /* populaire */
+        /* populaire */
 
     .vignette-populaire
     {
@@ -788,7 +819,7 @@ footer
         font-size: 1em;
     }
 
-    /* Activités */
+        /* Activités */
 
     .title-activités
     {
@@ -815,7 +846,7 @@ footer
 
 @media screen and (min-width: 380px)
 {
-    /* header */
+        /* header */
     
     #inscription
     {
@@ -825,7 +856,8 @@ footer
     {
         width: 170%;
     }
-    /* Recherche */
+
+        /* Recherche */
 
     #recherche h1
     {
@@ -841,22 +873,28 @@ footer
         margin: auto 70px auto 7px;
     }
 
+        /* FILTRE */ 
+
     .filtre
     {
         font-size: 1.3em;
     }
+
     .filtre i
     {
         padding: 25px;
     }
+
     .filtre #familial
     {
         padding: 25px 30px 25px 30px;
     }
+
     #info
     {
         font-size: 1.1em;
     }
+
     #info i
     {
         font-size: 1em;
@@ -864,32 +902,55 @@ footer
 
     .vignette-hebergement
     {
-        height: 253px;
+        height: 265px;
     }
+
     .img-heb img
     {
         top: -50%;
     }
+
     #amina
     {
-        top: -190%;
+        top: -174%;
     }
+
     .vignette-populaire
     {
         height: 150px;
     }
+
+    .img-pop
+    {
+        height: 150px;
+    }
+
+    .stars
+    {
+        margin-top: 50px;
+    }
+
+    .txt-pop h3
+    {
+        font-size: 1.2em;
+    }
+
     .vignette-gactivité
     {
         height: 265px;
     }
+
     .vignette-pactivité
     {
         height: 265px;
     }
+    
     .img-pact img
     {
         width: 109%;
+        top: -4%;
     }
+    
     #pomegues
     {
         top: -100%;
@@ -899,7 +960,7 @@ footer
 @media screen and (min-width: 760px)
 {
 
-    /* HEADER */ 
+        /* HEADER */ 
 
     header
     {
@@ -928,6 +989,7 @@ footer
         right: -200px;
         grid-column: 2;
         grid-row: 1;
+        top: -1%;
     }
 
     #menu li
@@ -935,7 +997,8 @@ footer
         padding-top: 18%;
     }
 
-    /* Recherche et Filtre */
+
+        /* Recherche et Filtre */
     
     #recherche
     {
@@ -990,7 +1053,7 @@ footer
         display: none;
     }
 
-    /* Filtres */
+        /* Filtres */
 
     #section-filtres
     {
@@ -1008,19 +1071,20 @@ footer
         width: 121%;
     }
 
-    /* info */
+        /* info */
 
     #info
     {
         font-size: 1.7em;
     }
 
-    /* Hébergement  */
+        /* Hébergement  */
 
     .title-section
     {
         margin-left: 50px;
     }
+
     #Résultat-2
     {
         margin-left: 25px;
@@ -1043,12 +1107,17 @@ footer
         top: -10px;
     }
 
+    #amina
+    {
+        top: -182%;
+    }
+
     #more
     {
         margin-left: 27px;
     }
 
-    /* Populaire  */
+        /* Populaire  */
 
     aside
     {
@@ -1060,9 +1129,13 @@ footer
         flex-direction: row;
     }
     
+    .lien-heb-pop
+    {
+        width: 33%;
+    }
     .vignette-populaire
     {
-        width: 30%;
+        width: 90%;
     }
     
     .img-pop
@@ -1080,7 +1153,7 @@ footer
         margin-top: 50px;
     }
 
-    /* Activité */
+        /* Activité */
 
     #Activités
     {
@@ -1096,7 +1169,7 @@ footer
 
     .vignette-gactivité
     {
-        width: 80%;
+        width: 91%;
         height: 660px;
         margin-right: 55px;
     }
@@ -1124,9 +1197,13 @@ footer
         width: 122%;
         right: 50px;
     }
+    #pomegues
+    {
+        top: -142%;
+    }
     #vignette-calanques
     {
-        width: 75%;
+        width: 93%;
     }
 
     #calanques
@@ -1141,7 +1218,7 @@ footer
         margin-left: 7px;
     }
 
-    /* Footer */
+        /* Footer */
     
     footer
     {
@@ -1155,7 +1232,7 @@ footer
 
 @media screen and (min-width: 1023px)
 {
-    /* HEADER */
+        /* HEADER */
 
     header
     {
@@ -1184,7 +1261,7 @@ footer
         top: 32%;
     }
 
-    /* Hébergements */
+        /* Hébergements */
 
     #Hébergements
     {
@@ -1223,7 +1300,8 @@ footer
     {
         margin-bottom: 25px;
     }
-    /* Populaire */
+
+        /* Populaire */
 
     aside
     {
@@ -1232,6 +1310,10 @@ footer
         margin-right: 25px;
     }
     
+    .lien-heb-pop
+    {
+        width: 100%;
+    }
     #populaire
     {
         display: flex;
@@ -1249,7 +1331,7 @@ footer
         height: 156px;
     }
 
-    /* Activités */
+        /* Activités */
 
     #Activités
     {
@@ -1268,9 +1350,13 @@ footer
         margin-right: 15px;
     }
 
-    .vignette-gactivité
+    .lien-act
     {
         width: 50%;
+    }
+    .vignette-gactivité
+    {
+        width: 92%;
         margin-right: 30px;
         height: 520px;
     }
@@ -1294,7 +1380,7 @@ footer
 
     #vignette-calanques
     {
-        width: 50%;
+        width: 87%;
         margin-left: 40px;
     }
 
@@ -1304,7 +1390,6 @@ footer
         left: -145%;
         height: 200%;
         width: 400%;
-
     }
 
     #pomegues
@@ -1312,7 +1397,7 @@ footer
         top: -135%;
     }
 
-    /* FOOTER */
+        /* FOOTER */
     
     footer
     {
@@ -1327,6 +1412,7 @@ footer
     {
         top: 36%;
     }
+    
     .lien-heb
     {
         width: 29%;
@@ -1357,7 +1443,7 @@ footer
         font-size: 1.5em;
     }
 
-    /* Activité */
+        /* Activité */
 
     .vignette-gactivité
     {
@@ -1386,8 +1472,74 @@ footer
         top: -27%;
     }
 
+    /* FOOTER */
+
     footer
     {
         margin-left: -222px;
+        width: 172%;
+    }
+}
+
+@media screen and (min-width: 1900px)
+{
+
+    header
+    {
+        margin-bottom: -5%;
+    }
+    .lien-heb
+    {
+        width: 30.5%;
+    }
+
+    .vignette-hebergement
+    {
+        height: 365px;
+    }
+
+    aside
+    {
+        width: 28%;
+    }
+
+    .vignette-populaire
+    {
+        height: 240px;
+    }
+
+    .img-pop
+    {
+        height: 238px;
+    }
+
+    #special
+    {
+        height: 315px;
+    }
+
+    .activités-3
+    {
+        margin-right: 35px;
+    }
+
+    .vignette-gactivité
+    {
+        height: 800px;
+    }
+
+    .vignette-pactivité
+    {
+        height: 388px;
+    }
+    .nom-act
+    {
+        padding-bottom: 36px;
+    }
+
+    footer
+    {
+        margin-left: -355px;
+        width: 176%;
     }
 }
