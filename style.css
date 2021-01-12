@@ -978,7 +978,7 @@ footer
     #inscription
     {
         grid-column: 3;
-        right: -225%;
+        right: -222%;
         top: 56%;
     }
 
@@ -986,7 +986,7 @@ footer
     {
         width: 100%;
         position: relative;
-        right: -200px;
+        right: -300px;
         grid-column: 2;
         grid-row: 1;
         top: -1%;
@@ -1002,7 +1002,7 @@ footer
     
     #recherche
     {
-        width: 120%;
+        width: 121%;
     }
 
     #recherche h1
@@ -1063,12 +1063,12 @@ footer
 
     #title-filtres
     {
-        margin: 23px auto 20px 35px;
+        margin: 23px 0px 20px 35px;
     }
 
     #filtres
     {
-        width: 121%;
+        width: 90%;
     }
 
         /* info */
@@ -1232,6 +1232,11 @@ footer
 
 @media screen and (min-width: 1023px)
 {
+    body
+    {
+        font-size: 1rem;
+    }
+
         /* HEADER */
 
     header
@@ -1241,7 +1246,7 @@ footer
 
     #menu
     {
-        right: -163%;
+        right: -78%;
         top: -48%;
     }
 
@@ -1258,7 +1263,21 @@ footer
 
     #inscription
     {
-        top: 32%;
+        top: 31%;
+        right: -120%;
+    }
+
+
+        /* Recherche */
+
+    #section-filtres
+    {
+        width: 100%;
+    }
+
+    #filtres
+    {
+        width: 80%;
     }
 
         /* Hébergements */
@@ -1266,7 +1285,7 @@ footer
     #Hébergements
     {
         flex-direction: row;
-        width: 157%;
+        width: 121%;
     }
 
     #Résultat
@@ -1279,17 +1298,24 @@ footer
     #Résultat-2
     {
         width: 100%;
+        margin-left: 0px;
     }
 
     .vignette-hebergement
     {
         width: 100%;
-        height: 232px;
+        height: 187px;
     }
 
     .lien-heb
     {
-        width: 28%;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .img-heb img
+    {
+        left: -26px;
     }
     #amina
     {
@@ -1305,7 +1331,7 @@ footer
 
     aside
     {
-        width: 40%;
+        width: 50%;
         border-radius: 35px;
         margin-right: 25px;
     }
@@ -1322,20 +1348,26 @@ footer
 
     .vignette-populaire
     {
-        width: 90%;
-        height: 157px;
+        width: 87%;
+        height: 131px;
     }
 
     .img-pop
     {
-        height: 156px;
+        height: 132px;
+    }
+
+    .stars
+    {
+        margin-top: 40px;
     }
 
         /* Activités */
 
     #Activités
     {
-        width: 150%;
+        width: 115%;
+        margin-left: 0px;
     }
 
     #Activités-all
@@ -1347,7 +1379,7 @@ footer
     .activités-3
     {
         width: 50%;
-        margin-right: 15px;
+        margin-right: -2px;
     }
 
     .lien-act
@@ -1358,7 +1390,7 @@ footer
     {
         width: 92%;
         margin-right: 30px;
-        height: 520px;
+        height: 432px;
     }
 
     .img-gact img
@@ -1370,7 +1402,7 @@ footer
 
     .vignette-pactivité
     {
-        height: 240px;
+        height: 200px;
     }
 
     .pact
@@ -1397,40 +1429,83 @@ footer
         top: -135%;
     }
 
+    .img-pact img 
+    {
+        width: 100%;
+        right: 0px;
+    }
+
+    .nom-act h3
+    {
+        font-size: 1em;
+    }
+
         /* FOOTER */
     
     footer
     {
-        margin-left: -110px;
-        width: 168%;
+        margin-left: -74px;
+        width: 128%;
     }
 }
 
 @media screen and (min-width: 1439px)
 {
+    nav
+    {
+        width: 100%;
+    }
+    #menu
+    {
+        width: 63%;
+        right: -105%;
+        top: -45%;
+    }
+
+    #menu li
+    {
+        width: 50%;
+    }
+
     #inscription
     {
-        top: 36%;
+        right: -70%;
+        top: 30%;
+    }
+
+    #recherche
+    {
+        width: 100%;
+    }
+
+    #Hébergements
+    {
+        width: 100%;
     }
     
     .lien-heb
     {
-        width: 29%;
+        width: 30%;
     }
 
     .vignette-hebergement
     {
-        height: 295px;
+        height: 217px;
+    }
+
+    aside
+    {
+        width: 42%;
     }
 
     .vignette-populaire
     {
-        height: 200px;
+        height: 137px;
     }
 
     .img-pop
     {
-        height: 196px;
+        height: 137px;
     }
 
     #special
@@ -1440,24 +1515,39 @@ footer
 
     .txt-pop
     {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
         /* Activité */
 
+    #Activités
+    {
+        width: 95%;
+    }
+
     .vignette-gactivité
     {
-        height: 625px;
+        height: 473px;
     }
     
     .vignette-pactivité
     {
-        height: 295px;
+        height: 221px;
+    }
+
+    #vignette-pomegues
+    {
+        height: 262px;
+    }
+
+    #vignette-frioul
+    {
+        height: 180px;
     }
 
     #pomegues
     {
-        top: -158%;
+        top: -75%;
     }
 
     #calanques
@@ -1476,8 +1566,8 @@ footer
 
     footer
     {
-        margin-left: -222px;
-        width: 172%;
+        margin-left: -112px;
+        width: 107.5%;
     }
 }
 
@@ -1488,6 +1578,7 @@ footer
     {
         margin-bottom: -5%;
     }
+
     .lien-heb
     {
         width: 30.5%;
