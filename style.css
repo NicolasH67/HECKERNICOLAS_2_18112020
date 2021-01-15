@@ -137,6 +137,11 @@ a
     text-decoration: none;
 }
 
+#title
+{
+    display: none;
+}
+
     /* HEADER */
 
 header
@@ -186,7 +191,7 @@ nav
     list-style-type: none;
     display: flex;
     margin: 0px;
-    padding-inline-start: 0px;
+    margin-left: -40px;
 }
 
 #menu li
@@ -468,7 +473,6 @@ button
 .stars-heb
 {
     display: flex;
-    font-size: 1,7em;
     color: #0065FC;
 }
 
@@ -568,7 +572,6 @@ aside
 {
     margin-top: 35px;
     display: flex;
-    font-size: 1,7em;
     color: #0065FC;
     width: 10%;
 }
@@ -1444,8 +1447,18 @@ footer
     
     footer
     {
-        margin-left: -74px;
-        width: 128%;
+        margin-left: -107px;
+        width: 131%;
+    }
+
+    #footer-hébergements
+    {
+        margin-left: -240px;
+    }
+    #assistance
+    {
+        position: relative;
+        left: -190px;
     }
 }
 
@@ -1569,6 +1582,18 @@ footer
         margin-left: -112px;
         width: 107.5%;
     }
+
+    #footer-hébergements
+    {
+        margin-left: -280px;
+    }
+
+    #assistance
+    {
+        position: relative;
+        left: -210px;
+    }
+
 }
 
 @media screen and (min-width: 1900px)
@@ -1576,7 +1601,7 @@ footer
 
     header
     {
-        margin-bottom: -5%;
+        margin-bottom: -1%;
     }
 
     .lien-heb
@@ -1584,9 +1609,14 @@ footer
         width: 30.5%;
     }
 
+    #Résultat-2
+    {
+        margin-left: 20px;
+    }
+
     .vignette-hebergement
     {
-        height: 365px;
+        height: 275px;
     }
 
     aside
@@ -1596,17 +1626,22 @@ footer
 
     .vignette-populaire
     {
-        height: 240px;
+        height: 183px;
     }
 
     .img-pop
     {
-        height: 238px;
+        height: 180px;
     }
 
     #special
     {
         height: 315px;
+    }
+
+    .stars
+    {
+        margin-top: 85px;
     }
 
     .activités-3
@@ -1616,13 +1651,24 @@ footer
 
     .vignette-gactivité
     {
-        height: 800px;
+        height: 640px;
     }
 
     .vignette-pactivité
     {
-        height: 388px;
+        height: 305px;
     }
+
+    #vignette-frioul
+    {
+        height: 240px;
+    }
+
+    #vignette-pomegues
+    {
+        height: 372px;
+    }
+
     .nom-act
     {
         padding-bottom: 36px;
@@ -1630,7 +1676,7 @@ footer
 
     footer
     {
-        margin-left: -355px;
-        width: 176%;
+        margin-left: -250px;
+        width: 113%;
     }
 }
