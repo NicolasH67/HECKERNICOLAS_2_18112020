@@ -1679,4 +1679,8 @@ footer
         margin-left: -250px;
         width: 113%;
     }
+    #assistance 
+    {
+        left: -275px;
+    }
 }
