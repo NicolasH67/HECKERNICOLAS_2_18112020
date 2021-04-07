@@ -5,4 +5,4 @@ Enfin, vous avez trouvé votre premier stage en tant que développeur web chez R
 
 Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche qui vous est attribuée !
 
-Accès au site : 
+Accès au site : https://nicolash67.github.io/HECKERNICOLAS_2_18112020/
